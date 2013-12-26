@@ -268,7 +268,7 @@ texinfo_documents = [
    u'docker-tools Documentation',
    u'Jonathan Stoppani',
    'dockertools',
-   'Different command line utilities to more easily work with Docker.',
+   'Command line utilities to make working with Docker easier.',
    'Miscellaneous'),
 ]
 
