@@ -1,0 +1,20 @@
+# Automation
+Fabric
+
+# Packaging
+wheel
+
+# Code linting
+flake8
+mccabe
+pep8
+pyflakes
+
+# Documentation
+Sphinx
+sphinx-autobuild
+
+# Testing
+tox
+pytest
+pytest-cov
