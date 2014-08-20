@@ -90,7 +90,7 @@ class Setup(object):
 
 Setup.test_links()
 
-setup(name='docker-tools',
+setup(name='dockertools',
       version=Setup.version(),
       author='Jonathan Stoppani',
       author_email='jonathan@stoppani.name',
