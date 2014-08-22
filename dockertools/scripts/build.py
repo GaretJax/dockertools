@@ -1,13 +1,14 @@
 import os
 import sys
+import shutil
 import subprocess
 
 import click
 
 
 DOCKER = os.environ.get('DOCKER', '/usr/bin/docker')
-DOCKERFILE = 'Dockerfile'
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
+DOCKERFILE = 'Dockerfile'
 
 
 @click.command(context_settings=CONTEXT_SETTINGS)
@@ -54,7 +55,7 @@ def build(dockerfile, force_rm, no_cache, quiet, rm, tag, path):
     options.append(path)
 
     if dockerfile:
-        os.symlink(dockerfile, build_dockerfile)
+        shutil.copyfile(dockerfile, build_dockerfile)
 
     try:
         subprocess.call(options)
